@@ -100,8 +100,20 @@ export default function App() {
                 num={"AC"}
                 className="bg-gray-500"
               ></Button>
-              <Button onClick={()=>{alert("Данное действие доступно по подписке")}} num={"+/-"} className="bg-gray-500"></Button>
-              <Button num={"%"} className="bg-gray-500"></Button>
+              <Button
+                onClick={() => {
+                  alert("Данное действие доступно по подписке");
+                }}
+                num={"+/-"}
+                className="bg-gray-500"
+              ></Button>
+              <Button
+                onClick={() => {
+                  alert("Данное действие доступно по подписке");
+                }}
+                num={"%"}
+                className="bg-gray-500"
+              ></Button>
               <Button
                 onClick={() => HandleOperator(3)}
                 num={"/"}
