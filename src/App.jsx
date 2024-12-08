@@ -79,7 +79,7 @@ export default function App() {
   }
 
   return (
-    <div className="w-full h-full flex justify-center items-center">
+    <div className="w-full h-full flex justify-center items-center flex-col">
       <div className="w-1/2 rounded-3xl overflow-hidden">
         <div className="flex-col flex w-full">
           <div
@@ -162,6 +162,11 @@ export default function App() {
           </main>
         </div>
       </div>
+      <p className="m-3 bg-slate-600 p-3 rounded-full">
+        {value}
+        {/* Функция для копирования текста в буффет обмена */}
+        <button onClick={() => navigator.clipboard.writeText(value)}>📄</button>
+      </p>
     </div>
   );
 }
